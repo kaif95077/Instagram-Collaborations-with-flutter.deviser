@@ -69,12 +69,12 @@
         <main>
             <div class="overflow-x-auto">
                 <table class="w-full text-left table-auto">
-                    <thead class="bg-slate-50 dark:bg-slate-800 text-sm text-slate-500 dark:text-slate-400 uppercase">
+                    <thead class="bg-slate-50 dark:bg-slate-800 text-xs sm:text-sm text-slate-500 dark:text-slate-400 uppercase">
                         <tr>
-                            <th class="p-4 rounded-l-lg font-semibold">Rank</th>
-                            <th class="p-4 font-semibold">Instagram Handle</th>
-                            <th class="p-4 font-semibold text-right">Followers</th>
-                            <th class="p-4 rounded-r-lg font-semibold text-center">Profile</th>
+                            <th class="p-2 sm:p-4 rounded-l-lg font-semibold">Rank</th>
+                            <th class="p-2 sm:p-4 font-semibold">Handle</th>
+                            <th class="p-2 sm:p-4 font-semibold text-right">Followers</th>
+                            <th class="p-2 sm:p-4 rounded-r-lg font-semibold text-center">Profile</th>
                         </tr>
                     </thead>
                     <tbody class="text-gray-800 dark:text-slate-200">
@@ -147,11 +147,11 @@
                 const tr = document.createElement('tr');
                 tr.className = 'border-b border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors';
                 tr.innerHTML = `
-                    <td class="p-4 font-bold text-slate-500">${index + 1}</td>
-                    <td class="p-4 font-semibold">${collab.handle}</td>
-                    <td class="p-4 text-right font-mono">${collab.followers}</td>
-                    <td class="p-4 text-center">
-                        <a href="https://www.instagram.com/${handleLink}/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline">
+                    <td class="p-2 sm:p-4 text-sm sm:text-base font-bold text-slate-500">${index + 1}</td>
+                    <td class="p-2 sm:p-4 text-sm sm:text-base font-semibold break-all">${collab.handle}</td>
+                    <td class="p-2 sm:p-4 text-right font-mono text-sm sm:text-base">${collab.followers}</td>
+                    <td class="p-2 sm:p-4 text-center">
+                        <a href="https://www.instagram.com/${handleLink}/" target="_blank" class="text-blue-600 dark:text-blue-400 hover:underline text-sm sm:text-base">
                            Link
                         </a>
                     </td>
@@ -162,5 +162,4 @@
     </script>
 </body>
 </html>
-
 
